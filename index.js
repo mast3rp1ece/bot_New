@@ -5,6 +5,8 @@ const text = require('./const')
 const fs = require('fs');
 const path = require('path');
 const cron = require('node-cron');
+require('object.fromentries').shim();
+
 
 
 const bot = new Telegraf(process.env.BOT_TOKEN);
